@@ -71,11 +71,11 @@ public class HomePresenter {
     private CityTemperatureResponse getSharedPrefCityIfAny(String cityName) {
         Gson gson = new Gson();
         String json = view.getPref().getString(cityName, "");
-        CityTemperatureResponse obj = gson.fromJson(json, CityTemperatureResponse.class);
-        if (obj == null || obj.toString() == "" || obj.equals(""))
+        CityTemperatureResponse cityTemperatureResponse = gson.fromJson(json, CityTemperatureResponse.class);
+        if (cityTemperatureResponse == null || cityTemperatureResponse.toString() == "" || cityTemperatureResponse.equals(""))
             return null;
         else
-            return obj;
+            return cityTemperatureResponse;
     }
 }
 
