@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Get city temperature</string>
+
+
+    <!--home screen-->
+    <string name="temp_hint">Please Enter city name </string>
+    <string name="submit_btn"> Submit </string>
+    <string name="degree_char">  ℃ </string>
+    <string name="error_edit_text_hint"> Please Enter City Name </string>
+
+</resources>

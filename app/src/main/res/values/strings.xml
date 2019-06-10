@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Get Temperature</string>
+
+
+    <!--home screen-->
+    <string name="temp_hint">Please Enter city name </string>
+    <string name="submit_btn"> Submit </string>
+    <string name="degree_char">  ℃ </string>
+    <string name="speed">  km/h </string>
+    <string name="error_edit_text_hint"> Please Enter City Name </string>
+
+    <string-array name="str_arr_cities">
+        <item>Select City</item>
+        <item>Sydney</item>
+        <item>Melbourne</item>
+        <item>Wollongong</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.HomeActivity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <Spinner
+        android:id="@+id/edit_city_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/temp_hint"
+        android:layout_marginTop="@dimen/edit_margin_top"
+        android:padding="@dimen/edit_padding" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/submit_btn"
+        android:textAllCaps="false"
+        android:padding="@dimen/edit_padding"
+        android:layout_marginTop="@dimen/edit_padding"
+        android:textColor="@color/colorText" />
+
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/edit_margin_top"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/edit_margin_top">
+
+
+        <LinearLayout
+            android:id="@+id/success_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="start"
+            android:padding="@dimen/edit_padding"
+            android:visibility="visible">
+
+
+
+            <TableLayout
+                android:id="@+id/tabla_cuerpo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape_dark"
+                        android:padding="5dp"
+                        android:text="City"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/city_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:padding="5dp"
+                        android:text="TextView"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape_dark"
+                        android:padding="5dp"
+                        android:text="Updated time"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/time_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:padding="5dp"
+                        android:text="TextView"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape_dark"
+                        android:padding="5dp"
+                        android:text="Weather"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/weather_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:padding="5dp"
+                        android:text="TextView"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape_dark"
+                        android:padding="5dp"
+                        android:text="Temperature"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/temp_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:padding="5dp"
+                        android:text="TextView"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape_dark"
+                        android:padding="5dp"
+                        android:text="Wind"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/wind_text_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cell_shape"
+                        android:padding="5dp"
+                        android:text="TextView"
+                        android:layout_weight="1"
+                        android:textAppearance="?android:attr/textAppearanceMedium"/>
+                </TableRow>
+
+            </TableLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/error_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Something error"
+            android:textSize="@dimen/temp_text_size"
+            android:padding="@dimen/edit_padding"
+            android:visibility="gone"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
